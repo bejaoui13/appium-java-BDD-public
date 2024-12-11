@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-25T11:16:34 CET" name="Default suite" finished-at="2024-10-25T11:16:49 CET" duration-ms="15156">
+    <groups>
+    </groups>
+    <test started-at="2024-10-25T11:16:34 CET" name="Default test" finished-at="2024-10-25T11:16:49 CET" duration-ms="15156">
+      <class name="com.tescase.LoginTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.tescase.LoginTest@34a3d150]" started-at="2024-10-25T11:16:34 CET" name="setDriver" finished-at="2024-10-25T11:16:49 CET" duration-ms="15092" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: 'DESKTOP-TA2JTMN', ip: '192.168.31.192'
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}, capabilities=[{appium:newCommandTimeout=600, appium:platformVersion=15, appium:app=C:\Users\user\eclipseworkspace\UXrinQA\app\application-custumrah.apk, platformName=ANDROID, appium:automationName=uiAutomator2, appium:deviceName=smart7px}]}]
+Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: 'DESKTOP-TA2JTMN', ip: '192.168.31.192'
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}, capabilities=[{appium:newCommandTimeout=600, appium:platformVersion=15, appium:app=C:\Users\user\eclipseworkspace\UXrinQA\app\application-custumrah.apk, platformName=ANDROID, appium:automationName=uiAutomator2, appium:deviceName=smart7px}]}]
+Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at com.base.BaseDeTest.initialiserDriver(BaseDeTest.java:35)
+at com.tescase.LoginTest.setDriver(LoginTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="testFailedLogin()[pri:0, instance:com.tescase.LoginTest@34a3d150]" started-at="2024-10-25T11:16:49 CET" name="testFailedLogin" finished-at="2024-10-25T11:16:49 CET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: 'DESKTOP-TA2JTMN', ip: '192.168.31.192'
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}, capabilities=[{appium:newCommandTimeout=600, appium:platformVersion=15, appium:app=C:\Users\user\eclipseworkspace\UXrinQA\app\application-custumrah.apk, platformName=ANDROID, appium:automationName=uiAutomator2, appium:deviceName=smart7px}]}]
+Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: 'DESKTOP-TA2JTMN', ip: '192.168.31.192'
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}, capabilities=[{appium:newCommandTimeout=600, appium:platformVersion=15, appium:app=C:\Users\user\eclipseworkspace\UXrinQA\app\application-custumrah.apk, platformName=ANDROID, appium:automationName=uiAutomator2, appium:deviceName=smart7px}]}]
+Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at com.base.BaseDeTest.initialiserDriver(BaseDeTest.java:35)
+at com.tescase.LoginTest.setDriver(LoginTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFailedLogin -->
+        <test-method signature="testSuccesLogin()[pri:1, instance:com.tescase.LoginTest@34a3d150]" started-at="2024-10-25T11:16:49 CET" name="testSuccesLogin" finished-at="2024-10-25T11:16:49 CET" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: 'DESKTOP-TA2JTMN', ip: '192.168.31.192'
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}, capabilities=[{appium:newCommandTimeout=600, appium:platformVersion=15, appium:app=C:\Users\user\eclipseworkspace\UXrinQA\app\application-custumrah.apk, platformName=ANDROID, appium:automationName=uiAutomator2, appium:deviceName=smart7px}]}]
+Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up 
+Host info: host: 'DESKTOP-TA2JTMN', ip: '192.168.31.192'
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {desiredCapabilities=Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}, capabilities=[{appium:newCommandTimeout=600, appium:platformVersion=15, appium:app=C:\Users\user\eclipseworkspace\UXrinQA\app\application-custumrah.apk, platformName=ANDROID, appium:automationName=uiAutomator2, appium:deviceName=smart7px}]}]
+Capabilities {app: C:\Users\user\eclipseworksp..., automationName: uiAutomator2, deviceName: smart7px, newCommandTimeout: 600, platformName: ANDROID, platformVersion: 15}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at com.base.BaseDeTest.initialiserDriver(BaseDeTest.java:35)
+at com.tescase.LoginTest.setDriver(LoginTest.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccesLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tescase.LoginTest@34a3d150]" started-at="2024-10-25T11:16:49 CET" name="tearDown" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1729851409871" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tescase.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
